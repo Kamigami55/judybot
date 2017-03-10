@@ -1,0 +1,3 @@
+# Judybot
+
+Your virtual girlfriend

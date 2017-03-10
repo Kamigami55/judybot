@@ -1,0 +1,15 @@
+{
+  "name": "judy-bot",
+  "version": "0.1.0",
+  "description": "Your virtual girlfriend",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esaon Chang",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.5.1",
+    "dotenv": "^4.0.0"
+  }
+}
