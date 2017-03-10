@@ -1,6 +1,5 @@
 var dotenv = require('dotenv')
 var Botkit = require('./lib/Botkit.js');
-var os = require('os');
 
 dotenv.load()
 
@@ -21,8 +20,6 @@ controller.setupWebserver(process.env.PORT || 3000, function(err, webserver) {
         console.log('ONLINE!');
     });
 });
-
-
 
 
 controller.api.thread_settings.greeting('這裡住著一隻小小聊天機器人，跟他說說話吧～');
