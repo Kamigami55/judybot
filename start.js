@@ -22,25 +22,8 @@ controller.setupWebserver(process.env.PORT || 3000, function(err, webserver) {
 });
 
 
-controller.api.thread_settings.greeting('這裡住著一隻小小聊天機器人，跟他說說話吧～');
-controller.api.thread_settings.get_started('sample_get_started_payload');
-controller.api.thread_settings.menu([
-    {
-        "type":"postback",
-        "title":"你好！",
-        "payload":"hello"
-    },
-    {
-        "type":"postback",
-        "title":"你會做些什麼？",
-        "payload":"help"
-    },
-    {
-        "type":"postback",
-        "title":"告訴我現在幾點",
-        "payload":"time"
-    },
-]);
+controller.api.thread_settings.delete_get_started();
+controller.api.thread_settings.delete_menu();
 
 
 // 聽到你好就問好
